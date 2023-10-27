@@ -3,7 +3,7 @@ name : build and test the back end of the project
 on :
   push :
     branches :
-      - main
+      - master
 
 jobs :
   build_test :
