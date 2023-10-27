@@ -1,5 +1,4 @@
 create database stockcar;
-drop table voiture;
 create table voiture (
 	id integer primary key auto_increment,	
 	marque varchar(30) not null,
