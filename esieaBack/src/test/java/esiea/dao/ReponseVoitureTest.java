@@ -9,7 +9,6 @@ public class ReponseVoitureTest {
     public void obtenir_liste_de_voiture() {
 
         ReponseVoiture reponseVoiture = new ReponseVoiture();
-        re
     }
 
 }
