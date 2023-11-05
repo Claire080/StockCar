@@ -2,13 +2,12 @@ name : build and test the back end of the project
 
 on :
   push :
-    branches :
-      - master
+    branches : ["master"]
 
 jobs :
   build_test :
     name : build and test the back of our app
-    runs-on : ubuntu-latest
+    runs-on : self-hosted
 
     steps :
       - name : checkout code
@@ -25,7 +24,7 @@ jobs :
         run : mvn -B package --file pom.xml
 
   publish-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build_test
     steps:
       - uses: actions/checkout@v3
