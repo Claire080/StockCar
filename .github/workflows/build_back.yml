@@ -32,8 +32,8 @@ jobs :
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: mvn --batch-mode --update-snapshots verify
-      - run: mkdir staging_back && cp target/*.war staging_back
+      - run: mvn --batch-mode --update-snapshots -f esieaBack/pom.xml verify
+      - run: mkdir staging_back && cp esieaBack/target/*.war staging_back
       - uses: actions/upload-artifact@v3
         with:
           name: Package
