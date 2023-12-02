@@ -2,12 +2,7 @@ name : build and test the back end of the project
 
 on :
   push :
-<<<<<<< HEAD
-    branches :
-      - master
-=======
     branches : ["master"]
->>>>>>> ae4fa1d9521a52629385f362cfaa34b173537f10
 
 jobs :
   build_test :
