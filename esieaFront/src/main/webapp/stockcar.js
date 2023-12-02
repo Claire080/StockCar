@@ -25,7 +25,7 @@ function afficherTableauListeVoitures(mini) {
 			}
 		  })
 		  .then(function(value) {
-				genererTableauListeVoitures(value, mini);
+				genererTableauVoitures(value, mini);
 				effacerFormulaire()
 				cacherFormulaireCreation()
 		  })
