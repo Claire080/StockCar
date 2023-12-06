@@ -8,27 +8,17 @@
   <url>http://maven.apache.org</url>
   
   <build>
-    <finalName>esieaFront</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.3.1</version>
-        <configuration>
-          <webResources>
-            <resource>
-              <directory>${basedir}/src/main/resources</directory>
-              <filtering>false</filtering>
-              <targetPath>META-INF</targetPath>
-            </resource>
-          </webResources>
-        </configuration>
-      </plugin>
-    </plugins>
+      <finalName>esieaFront</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+              <version>3.3.1</version>
+          </plugin>
+      </plugins>
   </build>
-  
   <properties>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
-</properties>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
 </project>
