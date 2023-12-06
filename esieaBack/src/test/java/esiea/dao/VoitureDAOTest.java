@@ -40,10 +40,4 @@ public class VoitureDAOTest {
     public void ajouter_une_voiture_Erreur() throws SQLException {
         assertThrows(SQLException.class, () -> voitureDAO.ajouterVoiture(voitureError), "La voiture a été ajouter");
     }
-
-
-    @Test
-    public void supprimer_une_voiture_OK() {
-
-    }
 }
